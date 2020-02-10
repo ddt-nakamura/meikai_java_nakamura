@@ -9,9 +9,13 @@ public class E2_04 {
 	public static void main(String[] args) {
 		// スキャナークラスの中のメソッドを使えるようにする。
 		Scanner scn = new Scanner(System.in);
+		
 		// 入力されたデータをinput_numberに代入する
 		int input_number = scn.nextInt();
-		System.out.println( "を加えた値は" + (input_number +10) + "です。" );
-		System.out.println( "を減じた値は" + (input_number -10) + "です。" );
+		
+		//キーボードから読み込んだ整数値に＋10を加えて出力
+		System.out.println( "10を加えた値は" + (input_number +10) + "です。" );
+		//キーボードから読み込んだ整数値に-10を加えて出力
+		System.out.println( "10を減じた値は" + (input_number -10) + "です。" );
 	}
 }
