@@ -15,17 +15,25 @@ import java.util.Scanner;
 public class E2_08 {
 
 	public static void main(String[] args) {
-        Scanner stdIn = new Scanner(System.in); //キーボードから数字を入力
+		 //コンソール画面にキーボードから数字を入力する
+        Scanner stdIn = new Scanner(System.in);
+        //Randomクラスを生成する
         Random rand  = new Random();
  
+        //整数値という文字を出力します
         System.out.print("整数値：");
-        int input_number  = stdIn.nextInt();
-        int random_number = rand.nextInt(11);
+        //inputNumberをint型にする(整数値の入力)
+        int inputNumber  = stdIn.nextInt();
+        //randomNumberをint型にし、整数値に加えるための乱数を作成。(rand.nextInt(11); で生成される乱数0~10)
+        int randomNumber = rand.nextInt(11);
  
-        input_number  += random_number;
-        random_number -= 5;
+        //生成された数値から5を引く
+        randomNumber -= 5;
+        //生成された数値と乱数0~10をたす
+        inputNumber  += randomNumber;
         
-        System.out.println("その値の±5の乱数を生成しました。それは" + input_number + "です。");
+        //カッコ内にある文字とinput_numberの乱数を出力します（
+        System.out.println("その値の±5の乱数を生成しました。それは" + inputNumber + "です。");
 	}
 
 }

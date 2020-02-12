@@ -15,13 +15,20 @@ import java.util.Random;
 public class E2_09 {
 
 	public static void main(String[] args) {
+		//Randomクラスを生成する
 		Random rand = new Random();
-		double Random_number1 = rand.nextDouble(); //0.0以上1.0未満の実数値をランダム
-		double Random_number2 = rand.nextDouble(); //0.0以上10.0未満の実数値をランダム
+		
+		//実数値でのランダム作成する(0.0以上1.0未満の実数値をランダム)
+		double RandomNumber1 = rand.nextDouble(); 
+		//整数値で0~9のランダムを作成する（0.0以上10.0未満の実数値をランダム）
+		double RandomNumber2 = rand.nextDouble(); 
 
-		System.out.println((Random_number1 + 0.9 ) + "は0.0以上1.0未満の実数値です。");
-		System.out.println((Random_number1 + 9 ) + "は0.0以上10.0未満の実数値です。");
-		System.out.println((Random_number2 -0.9 ) +  "は-1.0以上1.0未満の実数値です。");
+		//0.0以上1.0未満を出力
+		System.out.println((RandomNumber1 + 0.9 ) + "は0.0以上1.0未満の実数値です。");
+		//0.0以上10.0未満を出力（0～9までの整数値と0.0～0.99..の小数値を組み合わせ）
+		System.out.println((RandomNumber1 + 9 ) + "は0.0以上10.0未満の実数値です。");
+		//-1.0以上1.0未満を出力（1～0までの整数値と0.0～0.99..の小数値の組み合わせ）
+		System.out.println((RandomNumber2 -0.9 ) +  "は-1.0以上1.0未満の実数値です。");
 		
 	}
 
