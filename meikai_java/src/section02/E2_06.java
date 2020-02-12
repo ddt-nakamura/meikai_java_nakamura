@@ -28,5 +28,4 @@ public class E2_06 {
 		//(baseの値に入力した数)と(heightの値に入力した数)を足し算し÷2を行いコンソール画面に出力する。
 		System.out.println("面積は" + base * height /2 + "です。");
 	}
-
 }

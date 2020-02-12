@@ -8,26 +8,26 @@ public class E2_01 {
 
 	public static void main(String[] args) {
 		
-		//xをdouble型にする
-		double x ;
-		//yをdouble型にする
-		double y ;
+		//number1をint型にする
+		int number1 ;
+		//number2をint型にする
+		int number2 ;
 
-		//xに63.5を代入する。
-		x = 63.5 ;
-		//yに18.5を代入する。
-		y = 18.5 ;
+		//number1に63.5を代入する。63.5は小数点でありdouble型のため、int型で宣言をすると型が不一致のためエラーになります
+		number1 = 63.5 ;
+		//number2に18.5を代入する。18.5は小数点でありdouble型のため、int型で宣言をすると型が不一致のためエラーになります
+		number2 = 18.5 ;
 
-		//xに代入した数を出力　（xの値は63.5です。と出力される）
-		System.out.println("xの値は" + x + "です。");
+		//number1に代入した数を出力　（number1の値は63.5です。と出力される）
+		System.out.println("xの値は" + number1 + "です。");
 		
-		//yに代入した数を出力　（yの値は18.5です。と出力される）
-		System.out.println("yの値は" + y + "です。"); 
+		//number2に代入した数を出力　（number2の値は18.5です。と出力される）
+		System.out.println("yの値は" + number2 + "です。"); 
 		
-		//xとyに代入した数を足し算し出力　(合計は82.0です。と出力される)
-		System.out.println("合計は" + (x+y) + "です。");
-		//xとyに代入した数の平均を÷２してs出力　(平均は41.0です。と出力される)
-		System.out.println("平均は" + (x+y) / 2 + "です。");
+		//number1とnumber2に代入した数を足し算し出力　(合計は82.0です。と出力される)
+		System.out.println("合計は" + (number1 + number2) + "です。");
+		//number1とnumber2に代入した数の平均を÷２して出力　(平均は41.0です。と出力される)
+		System.out.println("平均は" + (number1 + number2) / 2 + "です。");
 	}
 
 }

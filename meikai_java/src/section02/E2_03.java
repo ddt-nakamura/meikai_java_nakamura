@@ -13,9 +13,9 @@ public class E2_03 {
 		// スキャナークラスの中のメソッドを使えるようにする。
 		Scanner scn = new Scanner(System.in);
 		
-		// 入力されたデータをinput_numberに代入
-		int input_number = scn.nextInt();
+		// 入力されたデータをinputNumberに代入
+		int inputNumber = scn.nextInt();
 		//キーボードから数字を入力すると入力した数字が出力され後ろに「と入力しましたね。」と出力される。
-		System.out.println(input_number + "と入力しましたね。" );
+		System.out.println(inputNumber + "と入力しましたね。" );
 	}
 }

@@ -10,12 +10,12 @@ public class E2_04 {
 		// スキャナークラスの中のメソッドを使えるようにする。
 		Scanner scn = new Scanner(System.in);
 		
-		// 入力されたデータをinput_numberに代入する
-		int input_number = scn.nextInt();
+		// 入力されたデータをinputNumberに代入する
+		int inputNumber = scn.nextInt();
 		
 		//キーボードから読み込んだ整数値に＋10を加えて出力
-		System.out.println( "10を加えた値は" + (input_number +10) + "です。" );
+		System.out.println( "10を加えた値は" + (inputNumber +10) + "です。" );
 		//キーボードから読み込んだ整数値に-10を加えて出力
-		System.out.println( "10を減じた値は" + (input_number -10) + "です。" );
+		System.out.println( "10を減じた値は" + (inputNumber -10) + "です。" );
 	}
 }
