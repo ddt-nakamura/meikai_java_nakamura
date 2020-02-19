@@ -24,7 +24,7 @@ public class E2_10 {
         String name  = stdIn.next();
         
         //「こんにちは柴田望洋さん。」をコンソール画面に出力する
-        System.out.print("こんにちは柴田望洋さん。");
+        System.out.println("こんにちは柴田望洋さん。");
 	}
 
 }
